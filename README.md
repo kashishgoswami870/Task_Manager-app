@@ -22,7 +22,6 @@ The app allows users to create, manage, and track tasks with dependencies in a c
 * Blocked tasks appear visually disabled until dependency is completed
 * Search tasks by title
 * Filter tasks by status
-* Draft-like behavior (data remains during navigation)
 * 2-second delay on create & update with loading indicator
 
 ---
@@ -51,22 +50,10 @@ The app allows users to create, manage, and track tasks with dependencies in a c
 
 ## ▶️ How to Run
 
-1. Clone the repository:
-
 ```bash
-git clone <your-repo-link>
-cd task_manager_app
-```
-
-2. Install dependencies:
-
-```bash
+git clone https://github.com/kashishgoswami870/Task_Manager-app.git
+cd Task_Manager-app
 flutter pub get
-```
-
-3. Run the app:
-
-```bash
 flutter run -d chrome
 ```
 
@@ -80,22 +67,22 @@ flutter run -d chrome
 
 ## ⭐ Stretch Goal
 
-None implemented (Focused on delivering a polished and stable core application)
+None implemented (Focused on delivering a stable and complete core application)
 
 ---
 
 ## 🤖 AI Usage Report
 
-### Helpful Prompts
+### Helpful Usage
 
-* Used AI to generate initial UI structure
-* Used AI to debug Hive integration and DateTime handling
-* Used AI to improve code structure and fix runtime errors
+* Used AI tools to generate initial UI structure
+* Used AI for debugging Hive integration and DateTime handling
+* Used AI to fix runtime and syntax errors
 
-### Issues Faced with AI
+### Issue Faced
 
-* AI initially suggested incorrect DateTime storage format for Hive
-* Fixed by converting DateTime to ISO string format using:
+* Initially stored DateTime directly, which caused issues with Hive
+* Fixed by converting DateTime to string using:
 
 ```dart
 toIso8601String()
@@ -105,14 +92,15 @@ toIso8601String()
 
 ## 🎥 Demo Video
 
-(Attach your Google Drive link here)
+(Add your Google Drive video link here)
 
 ---
 
 ## 📌 Notes
 
-* Focused on stability, clean UX, and fulfilling all core requirements
-* Kept architecture simple and beginner-friendly
+* Focused on delivering a stable and fully functional application
+* Prioritized clean UI and smooth user interaction
+* Avoided over-complicating architecture as a fresher
 
 ---
 
